@@ -1,0 +1,116 @@
+<!-- Place holder for the div -->
+<div class="header-placeholder"></div>
+
+<header [class.header-move-down]="navDropdownActive">
+  <a class="logo" routerLink="/">
+    <img src="../../../../assets/logo/tmrc logo.png" alt="logo" height="35px" width="163px" />
+  </a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+  <nav>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+
+      <li ngbDropdown>
+        <a ngbDropdownToggle>Solutions</a>
+        <div class="dropdown-content" ngbDropdownMenu>
+          <a ngbDropdownItem routerLink="/solutions/dynamics-365">Microsoft Dynamics 365</a>
+          <a ngbDropdownItem routerLink="/solutions/dynamics-gp">Microsoft Dynamics GP</a>
+          <a ngbDropdownItem routerLink="/solutions/dynamics-ax">Microsoft Dynamics AX</a>
+          <a ngbDropdownItem routerLink="/solutions/dynamics-crm">Microsoft Dynamics CRM</a>
+          <a ngbDropdownItem routerLink="/solutions/dynamics-nav">Microsoft Dynamics NAV</a>
+          <a ngbDropdownItem routerLink="/solutions/azure">Microsoft Azure</a>
+          <a ngbDropdownItem routerLink="/solutions/office-365">Microsoft Office 365</a>
+          <a ngbDropdownItem routerLink="/solutions/business-central"
+            >Microsoft Dynamics 365 <br />
+            Business Central</a
+          >
+          <a ngbDropdownItem routerLink="/solutions/sharepoint">Microsoft SharePoint</a>
+          <a ngbDropdownItem routerLink="/solutions/quickbooks">Quick Books</a>
+          <a ngbDropdownItem routerLink="/solutions/peachtree-accounting">Peachtree Accounting</a>
+        </div>
+      </li>
+
+      <li ngbDropdown>
+        <a ngbDropdownToggle>Services</a>
+        <div class="dropdown-content" ngbDropdownMenu>
+          <a ngbDropdownItem routerLink="/services/business-solution">Business Solutions</a>
+          <a ngbDropdownItem routerLink="/services/infrastructure-&-endpoint/"
+            >InfraStructure & EndPoint <br />
+            Managment</a
+          >
+          <a ngbDropdownItem routerLink="/services/business-intelligence"
+            >Business Intelligence <br />
+            & Reporting</a
+          >
+          <a ngbDropdownItem routerLink="/services/customization-&-dev"
+            >Customization & <br />
+            Development</a
+          >
+        </div>
+      </li>
+
+      <li ngbDropdown>
+        <a ngbDropdownToggle>Industries</a>
+        <div class="dropdown-content" ngbDropdownMenu>
+          <a ngbDropdownItem routerLink="/industries/retail">Retail</a>
+          <a ngbDropdownItem routerLink="/industries/public-sector">Public Sector</a>
+          <a ngbDropdownItem routerLink="/industries/consumer-goods">Consumer Goods</a>
+          <a ngbDropdownItem routerLink="/industries/textile-&-apparel">Textile & Apparel</a>
+          <a ngbDropdownItem routerLink="/industries/pharmaceutical">Pharmaceutical</a>
+          <a ngbDropdownItem routerLink="/industries/banking">Banking</a>
+          <a ngbDropdownItem routerLink="/industries/insurance">Insurance</a>
+          <a ngbDropdownItem routerLink="/industries/education">Education</a>
+          <a ngbDropdownItem routerLink="/industries/energy-&-utilities">Energy & Utilities</a>
+          <a ngbDropdownItem routerLink="/industries/telecom">Telecom</a>
+          <a ngbDropdownItem routerLink="/industries/logistics-&-transportation"
+            >Logistics & Transportation</a
+          >
+          <a ngbDropdownItem routerLink="/industries/chemical">Chemical</a>
+        </div>
+      </li>
+
+      <li><a href="#">blog</a></li>
+
+      <li ngbDropdown>
+        <a ngbDropdownToggle>About Us</a>
+        <div class="dropdown-content" ngbDropdownMenu>
+          <a ngbDropdownItem routerLink="/about-us/contact">Contact</a>
+          <a ngbDropdownItem routerLink="/about-us/company-profile">Company's Profile</a>
+          <a ngbDropdownItem routerLink="/about-us/erp-pakistan">ERP in Pakistan</a>
+          <a ngbDropdownItem routerLink="/about-us/dynamics-demo-request"
+            >Microsoft Dynamics Demo <br />
+            Request</a
+          >
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="search-icon-div">
+    <img class="ms-icon" src="../../../../assets/images/mbs parner2.png" alt="" />
+    <i
+      id="searchIcon"
+      #searchIcon
+      class="fa fa-search s-icon"
+      aria-hidden="true"
+      [class.hide-element]="isHide"
+      (click)="iconClick()"
+    ></i>
+    <input
+      autofocus
+      id="searchbox"
+      class="search-box"
+      [ngClass]="{ 'search-box hide-element': !isHide }"
+      type="text"
+      placeholder="search..."
+      #searchbox
+      (keyup.enter)="searchbox_keyUp(searchbox.value)"
+      (focusout)="searchbox_focusout()"
+    />
+  </div>
+
+  <!-- Why nav ky neechy label? -->
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>

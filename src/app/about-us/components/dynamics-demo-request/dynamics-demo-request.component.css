@@ -1,0 +1,82 @@
+/* Top bar with icon & title */
+.top-section {
+  background: #232528;
+  padding: 1em;
+  display: grid;
+  place-items: center;
+  height: 200px;
+}
+.top-section img {
+  width: 80px;
+  animation: 800ms ease 150ms 1 fade-in;
+  animation-fill-mode: backwards;
+}
+.top-section h1 {
+  color: #f48120;
+  animation: 800ms ease 150ms 1 fade-in;
+  animation-fill-mode: backwards;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Container Grid - holds two columns */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+.sidebar-left {
+  grid-column: 1 / 2;
+  padding: 2em;
+}
+.content-part {
+  grid-column: 2 / 4;
+  padding: 2em 2em;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+.div-content-part {
+  border: 1px solid #efefef;
+  padding: 1em;
+  padding-bottom: 0;
+  margin-bottom: 1em;
+}
+.content-part p {
+  animation: 800ms ease 150ms 1 fade-in;
+  animation-fill-mode: backwards;
+}
+
+/* Left and Right side bar */
+.title-and-links {
+  position: sticky;
+  top: 90px;
+}
+.links-title {
+  display: inline-block;
+  border-bottom: 3px double grey;
+  cursor: default;
+  font-weight: 500;
+  font-size: 18px;
+}
+.links-container {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.links-container a {
+  text-decoration: none;
+  color: black;
+  padding: 0.25em 0.25em;
+}
+.links-container a:hover {
+  background: #f48120;
+  color: white;
+}
+.active-link {
+  font-weight: 500;
+}

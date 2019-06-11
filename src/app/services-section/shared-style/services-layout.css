@@ -1,0 +1,244 @@
+.top-section {
+  background: #232528;
+  padding: 1em;
+  display: grid;
+  place-items: center;
+  height: 200px;
+}
+.top-section * {
+  animation: 800ms ease 250ms 1 fade-in;
+  animation-fill-mode: backwards;
+}
+.top-section img {
+  width: 80px;
+}
+.top-section h1 {
+  color: #f48120;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Container Grid - holds all the three columns */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+.sidebar-left {
+  grid-column: 1 / 2;
+  padding: 2em;
+}
+.content-part {
+  grid-column: 2 / 3;
+
+  padding: 3em 3em;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+.sidebar-right {
+  grid-column: 3 / 4;
+  padding: 2em;
+}
+.fancy-paragraph {
+  background: rgb(233, 233, 233);
+  padding: 1em;
+  border-left: 5px solid #f48120;
+  margin: 2em 0px !important;
+}
+.content-part p {
+  animation: 800ms ease 500ms 1 fade-in;
+  animation-fill-mode: backwards;
+}
+.sub-part p {
+  animation: 800ms ease 500ms 1 fade-in;
+  animation-fill-mode: backwards;
+}
+
+/* tags */
+.tags-div {
+  margin-top: 20px;
+}
+.tags-div a {
+  background: rgb(48, 46, 46);
+  padding: 3px 7px;
+  margin-right: 0.25em;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+}
+
+/* Article writer */
+.writer-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 10em;
+  background: rgb(233, 233, 233);
+}
+.writer-item-1 {
+  grid-column: 1 / 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.writer-item-2 {
+  grid-column: 2 / 3;
+
+  padding: 2em;
+}
+.writer-item-2 h3 {
+  color: #f48120;
+}
+.w-c-social-icons i {
+  font-size: 30px;
+  margin-right: 0.5em;
+}
+
+/* Left and Right side bar */
+.title-and-links {
+  position: sticky;
+  top: 90px;
+}
+.links-title {
+  display: inline-block;
+  border-bottom: 3px double grey;
+  cursor: default;
+  font-weight: 500;
+  font-size: 18px;
+}
+.links-container {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.links-container a {
+  text-decoration: none;
+  color: black;
+  padding: 0.25em 0.25em;
+}
+.links-container a:hover {
+  background: #f48120;
+  color: white;
+}
+.active-link {
+  font-weight: 500;
+}
+
+/* Right side - Dot styled links */
+.styled-links-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.styled-links-container::before {
+  border-left: 1px solid #efefef;
+  bottom: 15px;
+  content: '';
+  left: -11px;
+  position: absolute;
+  top: 20px;
+}
+.styled-links-container a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  position: relative;
+}
+.styled-links-container a:hover {
+  color: #df731b;
+}
+.styled-links-container a::before {
+  content: '';
+  border-radius: 50%;
+  left: -15px;
+  top: 15px;
+  background: #efefef;
+  border: 1px solid #efefef;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+}
+.styled-links-container a:hover::before {
+  background: #f48120;
+}
+/* For router link active */
+/* .styled-links-container a.active-side-link:hover::before {
+  background: #f48120;
+} */
+.styled-links-container a.active-side-link {
+  color: #df731b;
+}
+.styled-links-container a.active-side-link::before {
+  background: #f48120;
+}
+
+/* Related post area */
+.posts-area-grid {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  background: #efefef;
+}
+.post-item-1 {
+  grid-column: 1 / 2;
+}
+.post-item-2 {
+  grid-column: 2 / 3;
+  padding: 3em 5em;
+}
+.post-item-3 {
+  grid-column: 3 / 4;
+}
+.pi-top {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 3em;
+}
+.pi-top p {
+  margin: 0;
+  margin-right: 1em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: grey;
+}
+.pi-top div {
+  content: '';
+  width: 70%;
+  border-bottom: 5px double grey;
+}
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1em;
+}
+.card-item-1 {
+  grid-column: 1 / 2;
+}
+.card-item-2 {
+  grid-column: 2 / 3;
+}
+.card-item-3 {
+  grid-column: 3 / 4;
+}
+.post-image {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 2em;
+}
+.post-title {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  font-weight: 300;
+  color: grey;
+  border-bottom: 1px solid grey;
+}
+.post-text {
+  color: grey;
+}

@@ -1,0 +1,121 @@
+.content-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: min-content auto;
+}
+.top-section {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  background: #efefef;
+  padding: 1em;
+  text-align: center;
+}
+.context-part {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  padding: 3em 5em;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+.related-links-container {
+  grid-column: 2 / 3;
+  padding: 3em;
+}
+.col-item-2 > * {
+  margin-bottom: 0.5em;
+}
+
+.fancy-paragraph {
+  background: rgb(233, 233, 233);
+  padding: 1em;
+  /* border-left: 5px solid #f9ab04; */
+  border-left: 5px solid #f48120;
+  margin: 2em 0px !important;
+}
+.tags-div {
+  margin-top: 20px;
+}
+.tags-div a {
+  background: rgb(48, 46, 46);
+  padding: 3px 7px;
+  margin-right: 0.25em;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+}
+
+/* Article writer styles */
+.writer-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 10em;
+  background: rgb(233, 233, 233);
+}
+.writer-item-1 {
+  grid-column: 1 / 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.writer-item-2 {
+  grid-column: 2 / 3;
+
+  padding: 2em;
+}
+.writer-item-2 h3 {
+  /* color: #f9ab04; */
+  color: #f48120;
+}
+.w-c-social-icons i {
+  font-size: 30px;
+  margin-right: 0.5em;
+}
+
+/* Right side bar */
+.rs-tag {
+  border-bottom: 3px solid grey;
+  cursor: default;
+}
+.rs-side-links div {
+  margin: 0 0.5em;
+  padding: 0.3em;
+}
+.rs-div {
+  display: flex;
+  align-items: center;
+  transition: 0.1s;
+}
+.rs-div > * {
+  margin-right: 1em;
+}
+.rs-div > i {
+  /* color: #f9ab04; */
+  color: #f48120;
+}
+.rs-div img {
+  height: 20px;
+  width: 20px;
+}
+.rs-div > a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.rs-div:hover {
+  /* background: #f9ab04; */
+  background: #f48120;
+}
+.rs-div:hover * {
+  color: white;
+}
+.double-lines {
+  content: '';
+  border-bottom: 5px double grey;
+  margin: 2em 0px;
+}
+.fa-circle {
+  font-size: 8px;
+  /* color: #f9ab04; */
+  color: #f48120;
+}

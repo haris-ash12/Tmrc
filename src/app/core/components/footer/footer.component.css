@@ -1,0 +1,117 @@
+/* footer */
+.footer {
+  background: #232528;
+  display: grid;
+  grid-template-columns: 4rem 1fr 1fr 1fr 1fr 1fr 4rem;
+}
+.solutions {
+  grid-column: 2 / 3;
+  /* background: lightgreen; */
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.solutions p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0.3em;
+}
+.solutions a {
+  color: #aeacac;
+  text-decoration: none;
+  margin-bottom: 0.3em;
+  font-size: 14px;
+}
+.services {
+  grid-column: 3 / 4;
+  /* background: rgb(224, 238, 144); */
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.services p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0.3em;
+}
+.services a {
+  color: #aeacac;
+  text-decoration: none;
+  margin-bottom: 0.3em;
+  font-size: 14px;
+}
+.industries {
+  grid-column: 4 / 5;
+  /* background: rgb(144, 227, 238); */
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.industries p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0.3em;
+}
+.industries a {
+  color: #aeacac;
+  text-decoration: none;
+  margin-bottom: 0.3em;
+  font-size: 14px;
+}
+.aboutus {
+  grid-column: 5 / 6;
+  /* background: rgb(146, 144, 238); */
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.aboutus p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0.3em;
+}
+.aboutus a {
+  color: #aeacac;
+  text-decoration: none;
+  margin-bottom: 0.3em;
+  font-size: 14px;
+}
+.remaining {
+  grid-column: 6 / 7;
+  /* background: rgb(238, 171, 144); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+.social-icons a img {
+  width: 30px;
+  margin: 0.5em;
+}
+.ms-partner-img {
+  width: 150px;
+}
+.copy-rights {
+  grid-row: 2 / 3;
+  grid-column: 2 / 7;
+  /* background: lightgoldenrodyellow; */
+  padding: 1em;
+  border-top: 1px solid #707070;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copy-rights p {
+  font-size: 14px;
+}

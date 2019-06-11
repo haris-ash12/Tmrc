@@ -1,0 +1,11 @@
+<div class="parent" [@slide]="activePane">
+  <div>
+    <ng-content select="[onePane]"></ng-content>
+  </div>
+  <div>
+    <ng-content select="[twoPane]"></ng-content>
+  </div>
+  <div>
+    <ng-content select="[threePane]"></ng-content>
+  </div>
+</div>

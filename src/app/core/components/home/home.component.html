@@ -1,0 +1,172 @@
+<!-- Slider - using Grid system -->
+<div class="slider-container">
+  <!-- Content -->
+  <div class="content-item">
+    <h1 class="sc-item-1">Experience</h1>
+    <h1 class="sc-item-2">Over Decades</h1>
+    <h1 class="sc-item-3">Serving Our Client Requirements</h1>
+    <div class="btn-container">
+      <a class="btn-profile" routerLink="/about-us/company-profile">Our Profile</a>
+      <a class="btn-contact" routerLink="/about-us/contact">Contact Us</a>
+    </div>
+    <div class="circle-small"></div>
+    <div class="circle-half"></div>
+    <div class="circle-bottom"></div>
+  </div>
+
+  <!-- Slider -->
+  <div class="image-item">
+    <slideshow
+      [height]="height"
+      [minHeight]="'525px'"
+      [arrowSize]="arrowSize"
+      [showArrows]="showArrows"
+      [imageUrls]="imageUrlArray"
+      [lazyLoad]="imageSources?.length > 1"
+      [autoPlayWaitForLazyLoad]="true"
+      [showDots]="showDots"
+      [dotColor]="dotColor"
+      [autoPlay]="autoPlay"
+      [autoPlay]="autoPlay"
+      [autoPlayInterval]="autoPlayInterval"
+    ></slideshow>
+
+    <!-- <custom-slider class="slider" [activePane]="slideNumber">
+      <div onePane>
+        <div class="image-container">
+          <img src="../../../../assets/slider-images/slider img 1.jpg" alt="" />
+          
+        </div>
+      </div>
+      <div twoPane>
+        <div class="image-container">
+          <img src="../../../../assets/slider-images/slider img 1 without text .jpg" alt="" />
+          
+        </div>
+      </div>
+      <div threePane>
+        <div class="image-container">
+          <img src="../../../../assets/slider-images/slider img 1.jpg" alt="" />
+          
+        </div>
+      </div>
+    </custom-slider> -->
+
+    <!-- <div class="circles-container">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+    </div> -->
+  </div>
+</div>
+
+<div class="spacing"></div>
+
+<!-- Who we are -->
+<div class="why-us-header">
+  <h1 class="why-us-title">Who <span style="color:#f48120">We</span> Are</h1>
+</div>
+<div class="who-grid-container">
+  <!-- Youtube Video -->
+  <div class="item-video">
+    <iframe src="https://www.youtube.com/embed/oquZwWWLCHQ"> </iframe>
+  </div>
+  <!-- Text Content -->
+  <div class="item-text">
+    <!-- <h1 class="it-heading">Who We Are</h1> -->
+    <p class="it-content">
+      TMRC is an associated company of Tariq Mian Ramzan Arshad & Co. Key elements of services cover
+      business advisory, management consulting, technology solutions, capacity building and finance.
+      We believe in knowledge sharing and performance enhancement of the clients. What sets us apart
+      from our competitor Microsoft Partners in Pakistan is the personalized service of ERP in
+      Pakistan and close liaison with the clients to understand their needs and offer solutions
+      matching those needs.
+    </p>
+  </div>
+</div>
+
+<!-- Gap -->
+<div class="spacing"></div>
+
+<!-- Services / cards -->
+<div class="why-us-header">
+  <h1 class="why-us-title">Our <span style="color:#f48120">Services</span></h1>
+</div>
+<div class="card-grid-container">
+  <!-- Card 1 -->
+  <div class="card-1 cardi" routerLink="/services/business-solution">
+    <div class="cg-icon-hold hvr-underline-from-center">
+      <img class="cg-icon" src="../../../../assets/service-icons/project-management.png" alt="" />
+    </div>
+    <h1 class="cg-heading">Business Solutions</h1>
+    <p class="cg-text">
+      We brings the gratitude to the efforts to make it more achievable by involving range of
+      departmental solutions into your business, Either on cloud or on-premises, Making process
+      automation possible!
+    </p>
+  </div>
+  <!-- Card 2 -->
+  <div class="card-2 cardi" routerLink="/services/infrastructure-&-endpoint/">
+    <div class="cg-icon-hold hvr-underline-from-center">
+      <img class="cg-icon" src="../../../../assets/service-icons/firewall.png" alt="" />
+    </div>
+    <h1 class="cg-heading">InfraStructure & EndPoint Managment</h1>
+    <p class="cg-text">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard
+    </p>
+  </div>
+  <!-- Card 3 -->
+  <div class="card-3 cardi" routerLink="/services/business-intelligence">
+    <div class="cg-icon-hold hvr-underline-from-center">
+      <img class="cg-icon" src="../../../../assets/service-icons/growth.png" alt="" />
+    </div>
+    <h1 class="cg-heading">Business Intelligence & Reporting</h1>
+    <p class="cg-text">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard
+    </p>
+  </div>
+  <!-- Card 4 -->
+  <div class="card-4 cardi" routerLink="/services/customization-&-dev">
+    <div class="cg-icon-hold hvr-underline-from-center">
+      <img class="cg-icon" src="../../../../assets/service-icons/customer-support.png" alt="" />
+    </div>
+
+    <h1 class="cg-heading">Customization & Development</h1>
+    <p class="cg-text">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard
+    </p>
+  </div>
+</div>
+
+<!-- Gap -->
+<div class="spacing"></div>
+
+<div class="why-us-section">
+  <div class="why-us-header">
+    <h1 class="why-us-title">Why <span style="color:#f48120">Us</span></h1>
+  </div>
+  <div class="why-us-content-area">
+    <div class="w-card-1 w-card">
+      <img class="w-card-img" src="../../../../assets/why-us-icons/experience.png" alt="" />
+      <p class="w-card-title">Decades Of Experience</p>
+    </div>
+    <div class="w-card-2 w-card">
+      <img class="w-card-img" src="../../../../assets/why-us-icons/247support.png" alt="" />
+      <p class="w-card-title">24/7 Support</p>
+    </div>
+    <div class="w-card-3 w-card">
+      <img class="w-card-img" src="../../../../assets/why-us-icons/certified.png" alt="" />
+      <p class="w-card-title">Microsoft Certified Professionals</p>
+    </div>
+    <div class="w-card-4 w-card">
+      <img class="w-card-img" src="../../../../assets/why-us-icons/100successful.png" alt="" />
+      <p class="w-card-title">100% Successful Implementation</p>
+    </div>
+  </div>
+</div>
+
+<!-- Gap -->
+<div class="spacing"></div>
